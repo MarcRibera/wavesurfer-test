@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/plugins/regions.min.js"></script>
+  </head>
+  <body>
+    <h2>PUMELU CODERS POC</h2>
+
+    <p><kbd>Space</kbd> -> play/pause</p>
+    <p><kbd>Drag on waveform</kbd> -> create region</p>
+    <p>
+      <kbd>Clik on region</kbd> -> play region (!!Possible Chrome bug, use
+      Firefox instead)
+    </p>
+    <br />
+
+    <div id="waveform"></div>
+    <br />
+
+    <label
+      style="display: flex; align-items: center; margin: 1rem 0; gap: 1rem"
+    >
+      Zoom:
+      <input id="zoom-range" type="range" min="10" max="10000" value="100" />
+    </label>
+
+    <div style="display: flex; align-items: center; margin: 1rem 0; gap: 1rem">
+      <label> Playback rate: <span id="rate">1.00</span>x </label>
+
+      <label>
+        <input
+          type="range"
+          id="pitch-range"
+          min="0"
+          max="3"
+          step="1"
+          value="3"
+        />
+      </label>
+
+      <label>
+        <input type="checkbox" checked />
+        Preserve pitch
+      </label>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

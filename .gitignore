@@ -1,0 +1,43 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+.netbeans/
+
+# Ignore build and compilation files
+build/
+dist/
+node_modules/
+target/
+
+# Ignore log files
+*.log
+
+# Ignore configuration files
+config.json
+settings.json
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore binary files
+*.exe
+*.bin
+*.zip
+*.rar
+*.tar
+*.gz
+*.bz2
+
+# Ignore backup files
+*.bak
+*.backup
+*.old
+
+# Ignore editor backup files
+*~
+.#*
